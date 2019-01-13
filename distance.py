@@ -52,7 +52,7 @@ def read_files():
     f_ext.close()
     f_clients.close()
 
-""" Sortie du resultat """
+""" Sortie du resultat dans un fichier"""
 def output(result):
     output = open(file_output+".txt", "a")
     output.write(result+"\n")
