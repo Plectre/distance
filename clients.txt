@@ -1,1 +1,1 @@
-nice, paris
+strasbourg,brest,nice

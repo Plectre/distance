@@ -1,1 +1,1 @@
-bordeaux,bergerac
+bordeaux,libourne,pompignac
