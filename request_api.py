@@ -10,7 +10,6 @@ arrivee = ""
 unit = "k"
 ambiguite = "ignore" # "check" <> "ignore"
 
-
 class Request():
 
     def __init__(self, start, stop):
