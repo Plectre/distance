@@ -13,7 +13,7 @@ def requette(fr, to):
 	PARAMS = {'key' : KEY, 'from' : fr, 'to' : to}
 	
 	try:
-		if fr != " " or to != " ": 									# ça ça marche pas !
+		if fr != "" or to != "": 									# ça ça marche pas !
 			r = requests.get(url=URL, params=PARAMS)				# Requette http avec paramétres '&key=<>&to=<>&fr=<>
 			data = r.json()											# get json
 			statuscode = data['info']['statuscode']
@@ -62,7 +62,10 @@ def exec_requette():
 		exutoire = exutoires[i]
 	for j in range (0, len(clients)):
 		client = clients[j]
-		requette(exutoire, client)
+		if exutoire != "" and client != "":
+			requette(exutoire, client)
+		else:
+			print("! Au moins,une des entrées est vide, pas de requette GET !")
 
 # def save(output):
 # 	try:

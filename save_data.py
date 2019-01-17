@@ -15,5 +15,3 @@ class Save():
             f.close()
         except EOFError:
             print ("Erreur d'ecriture" + str(EOFError))
-
-    
